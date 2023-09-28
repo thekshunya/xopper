@@ -1,10 +1,10 @@
 const divideButton = document.querySelector('#divideButton');
 const inputText = document.getElementById('inputText');
 const outputParagraphs = document.getElementById('outputParagraphs');
-
+const clearStorageButton = document.getElementById('clearStorageButton');
 // Load the input text from localStorage if available
 inputText.value = localStorage.getItem('inputText') || '';
-
+clearStorageButton.addEventListener('click', clearLocalStorage);
 // Load saved paragraphs from localStorage if available
 const savedParagraphs =
   JSON.parse(localStorage.getItem('savedParagraphs')) || [];
@@ -130,4 +130,10 @@ function copyToClipboard(text) {
   tempTextArea.select();
   document.execCommand('copy');
   document.body.removeChild(tempTextArea);
+}
+function clearLocalStorage() {
+  localStorage.clear();
+  inputText.value = ''; // Clear the input field
+  outputParagraphs.innerHTML = ''; // Clear the output paragraphs
+  savedParagraphs.length = 0; // Clear the saved paragraphs array
 }

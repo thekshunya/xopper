@@ -12,7 +12,9 @@
   </head>
   <body class="bg-gray-100 w-96 h-96 overflow-y-auto">
     <div class="container mx-auto p-6 w-full">
-      <h1 class="text-2xl font-semibold mx-auto">Xopper</h1>
+      <div class="text-2xl font-semibold mx-auto flex justify-center">
+        <h1>Xopper</h1>
+      </div>
       <p class="mt-2 text-xs">
         Enter your text below and click the "XOPP" button to break it into
         paragraphs based on the first period before reaching character limit.
@@ -21,13 +23,20 @@
         id="inputText"
         class="w-full h-32 resize-none mt-4 p-2 border rounded"
       ></textarea>
-      <button
-        id="divideButton"
-        class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-      >
-        XOPP
-      </button>
-
+      <div class="flex justify-between m-2">
+        <button
+          id="divideButton"
+          class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        >
+          XOPP
+        </button>
+        <button
+          id="clearStorageButton"
+          class="mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+        >
+          Clear
+        </button>
+      </div>
       <!-- Add a scrollbar to the following div -->
       <div
         class="mt-6 space-y-4"
