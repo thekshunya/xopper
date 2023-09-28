@@ -25,14 +25,14 @@ function divideText() {
 
   const maxLength = 280;
   let currentParagraph = '';
-  const sentences = inputTextValue.split(/\n/);
+  const words = inputTextValue.split(/\s+/); // Split text by spaces
 
-  sentences.forEach((sentence) => {
-    if (currentParagraph.length + sentence.length <= maxLength) {
-      currentParagraph += sentence + '\n';
+  words.forEach((word) => {
+    if (currentParagraph.length + word.length + 1 <= maxLength) {
+      currentParagraph += word + ' ';
     } else {
       addParagraph(currentParagraph.trim());
-      currentParagraph = sentence + '\n';
+      currentParagraph = word + ' ';
     }
   });
 
