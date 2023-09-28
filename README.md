@@ -8,8 +8,7 @@ Many improvements can be made still, here are a few ideas:
 
 + Adding a number for every tweet - (n/8)
 + Making the extension static, coz currently its a pain to keep opening the extension everytime u wanna copy a xost
-
-and many such
++ and many more
 
 **Installation Guide**
 
