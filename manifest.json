@@ -1,0 +1,11 @@
+{
+  "name": "Xopperr",
+  "version": "1.0.0",
+  "description": "xop your xosts",
+  "manifest_version": 3,
+  "author": "kshunya",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "My Chrome Extension"
+  }
+}
