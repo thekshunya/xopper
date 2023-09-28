@@ -1,6 +1,7 @@
 # Xopper
 
-A chrome extension to make framing smaller xosts(posts on X) easier and faster
+A chrome extension to make framing smaller xosts(posts on X) easier and faster.
+
 Feel free to contribute!
 
 Many improvements can be made still, here are a few ideas:
