@@ -17,6 +17,39 @@ savedParagraphs.forEach((paragraph) => {
 // Attach the event listener to the button
 divideButton.addEventListener('click', divideText);
 
+// function divideText() {
+//   const inputTextValue = inputText.value.trim();
+//   localStorage.setItem('inputText', inputTextValue); // Save input text to localStorage
+
+//   outputParagraphs.innerHTML = '';
+
+//   const maxLength = 280;
+//   let currentParagraph = '';
+//   const words = inputTextValue.split(/\s+/); // Split text by spaces
+
+//   words.forEach((word) => {
+//     if (currentParagraph.length + word.length + 1 <= maxLength) {
+//       currentParagraph += word + ' ';
+//     } else {
+//       addParagraph(currentParagraph.trim());
+//       currentParagraph = word + ' ';
+//     }
+//   });
+
+//   if (currentParagraph) {
+//     addParagraph(currentParagraph.trim());
+//   }
+
+//   // Save generated paragraphs to localStorage
+//   savedParagraphs.push(currentParagraph.trim());
+//   localStorage.setItem('savedParagraphs', JSON.stringify(savedParagraphs));
+
+//   // Calculate the popup height based on content height
+//   const popupHeight = outputParagraphs.scrollHeight + 20; // Add some padding
+//   chrome.windows.getCurrent((window) => {
+//     chrome.windows.update(window.id, { height: popupHeight });
+//   });
+// }
 function divideText() {
   const inputTextValue = inputText.value.trim();
   localStorage.setItem('inputText', inputTextValue); // Save input text to localStorage
@@ -32,16 +65,22 @@ function divideText() {
       currentParagraph += word + ' ';
     } else {
       addParagraph(currentParagraph.trim());
+
+      // Save the completed paragraph to localStorage
+      savedParagraphs.push(currentParagraph.trim());
+
       currentParagraph = word + ' ';
     }
   });
 
   if (currentParagraph) {
     addParagraph(currentParagraph.trim());
+
+    // Save the last paragraph to localStorage
+    savedParagraphs.push(currentParagraph.trim());
   }
 
   // Save generated paragraphs to localStorage
-  savedParagraphs.push(currentParagraph.trim());
   localStorage.setItem('savedParagraphs', JSON.stringify(savedParagraphs));
 
   // Calculate the popup height based on content height
