@@ -11,7 +11,7 @@ Many improvements can be made still, here are a few ideas:
 + and many more
 
 
-**Installation Guide**
+##Installation Guide
 
 - Clone or download this repository to your computer.
 
