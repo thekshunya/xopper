@@ -2,13 +2,14 @@
 
 A chrome extension to make framing smaller xosts(posts on X) easier and faster.
 
-![xopperdemodv1 mp4 (1)](https://github.com/thekshunya/xopper/assets/69801148/4c0e8770-077f-409a-8adf-19a9e006e214)
+![xopperdemodv1 mp4](https://github.com/thekshunya/xopper/assets/69801148/f3f0b570-a736-4640-a74d-4966e423e44b)
+
 
 Many improvements can be made still, here are a few ideas:
 
 + Adding a number for every tweet - (n/8)
-+ Making the extension static, coz currently its a pain to keep opening the extension everytime u wanna copy a xost
-+ and many more
+
++ ...and many more
 
 
 ##Installation Guide
