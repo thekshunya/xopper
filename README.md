@@ -14,7 +14,8 @@ Many improvements can be made still, here are a few ideas:
 **Installation Guide**
 
 - Clone or download this repository to your computer.
-      `git clone github.com/ManyFacedGod1/xopper`      
+
+`git clone github.com/ManyFacedGod1/xopper`      
 
 - Open Google Chrome.
 
@@ -27,3 +28,13 @@ Many improvements can be made still, here are a few ideas:
 - Navigate to the folder where you cloned or downloaded the extension and select the extension's directory.
 
 - Click the "Select Folder" or "Open" button.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Create a pull request.
